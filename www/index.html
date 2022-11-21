@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbeitszeiten</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background-color: #F5F8FD;
+            font-family: 'Open Sans', sans-serif;
+        }
+        button {
+            background-color: #1ABAF9;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        input {
+            border: 1px solid rgba(0,0,0,0.12);
+            height: 50px;
+            border-radius: 8px;
+            width: calc(100% - 8px);
+            background-color: white;
+        }
+
+        .list-item {
+            background-color: white;
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .small-img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arbeitszeiten</h1>
+    <input id="myDate" placeholder="Datum einfügen" type="date">
+    <input id="myStartTime" placeholder="Startzeit einfügen" type="time">
+    <input id="myEndTime" placeholder="Endzeit einfügen" type="time">
+    <button onclick="addWorktime()">Speichern</button>
+
+    <div id="myWorkingHours">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
